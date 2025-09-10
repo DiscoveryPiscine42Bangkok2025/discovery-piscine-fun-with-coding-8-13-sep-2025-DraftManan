@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Background</title>
+  <link rel="stylesheet" href="background.css">
+</head>
+<body>
+  <button id="btn">Change Background</button>
+
+  <script>
+    document.getElementById("btn").onclick = function() {
+      document.body.style.backgroundColor =
+        "rgb(" +
+        Math.floor(Math.random()*256) + "," +
+        Math.floor(Math.random()*256) + "," +
+        Math.floor(Math.random()*256) + ")";
+    };
+  </script>
+</body>
+</html>
