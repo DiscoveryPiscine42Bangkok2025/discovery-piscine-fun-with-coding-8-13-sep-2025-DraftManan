@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url("https://www.govivigo.com/content/ideas/66e3/66e3b0919a771ce4020000d5-2-full-ideas.jpg");
+}
+.img2 {
+  background-image: url("https://thaitabloid.com/wp-content/uploads/2025/07/990705.jpg");
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px black;
+}
+
+.block {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 1.5em;
+}
