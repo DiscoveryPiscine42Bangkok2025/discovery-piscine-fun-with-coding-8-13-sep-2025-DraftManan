@@ -2,48 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>User profile card</title>
+  <title>User Profile Card</title>
   <link rel="stylesheet" href="card.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+  <h1 class="page-title">User Profile Card</h1>
+
   <div class="card">
-    <h2 class="card-title">Profile</h2>
+    <img class="banner" src="https://beneast.com/wp-content/uploads/2016/03/18839f21-608b-4acd-a2aa-a944db3e15e7-2060x1236.jpeg" alt="Profile banner">
 
     <table class="layout">
       <tr>
-        <td class="photo-cell" rowspan="3">
-          <img class="avatar" src="https://hips.hearstapps.com/hmg-prod/images/81st-golden-globe-awards-taylor-swift-on-the-red-carpet-of-news-photo-1719260997.jpg?crop=0.384xw:0.488xh;0.546xw,0.0864xh&resize=640:*/200?img=5" alt="Profile picture">
-        </td>
-        <td class="text-cell">
-          <div class="login">@yourlogin</div>
+        <td class="center">
+          <div class="login big">Taylor Swift</div>
         </td>
       </tr>
       <tr>
-        <td class="text-cell">
-          <div class="desc">Developer • Maker</div>
+        <td class="center">
+          <div class="desc">Singer • Songwriter</div>
         </td>
       </tr>
       <tr>
-        <td class="text-cell">
+        <td class="center">
+          <div class="location">Nashville, USA</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="center">
           <div class="socials">
-            <a href="https://github.com/" target="_blank" aria-label="GitHub">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-            </a>
-            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn">
-            </a>
+            <a href="#" aria-label="Twitter"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="twitter"></a>
+            <a href="#" aria-label="LinkedIn"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="linkedin"></a>
+            <a href="#" aria-label="Facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Facebook_icon_%28black%29.svg" alt="facebook"></a>
           </div>
         </td>
       </tr>
     </table>
 
-    <div class="actions">
-      <a class="btn" href="mailto:you@example.com">Contact</a>
-    </div>
+    <a class="bar-btn" href="mailto:you@example.com">Contact</a>
   </div>
 </body>
 </html>
