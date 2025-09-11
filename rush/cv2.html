@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sthongae</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-white">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-neutral-800 border-b border-neutral-700 px-8 py-4 flex justify-between z-50">
+    <span class="font-bold tracking-wider">STHONGAE</span>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#skill" class="hover:underline">Skill</a>
+      <a href="#showcase" class="hover:underline">Showcase</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </div>
+  </nav>
+
+  <main class="pt-28 max-w-6xl mx-auto px-6">
+    <!-- About -->
+    <section id="about" class="mb-20 flex flex-col items-center">
+      <div class="w-full grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Profile + Icons -->
+        <div class="flex justify-center items-center relative">
+          <div class="rounded-full overflow-hidden border-4 border-gray-700 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px]">
+            <img src="image/sthongae.jpg" alt="Profile" class="object-cover w-full h-full" />
+          </div>
+          <!-- Tech Icons -->
+          <div class="absolute top-[10%] left-[-5%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
+            <img src="logo/python.png" class="w-[34px] h-[36px]" />
+          </div>
+          <div class="absolute top-[5%] right-[8%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
+            <img src="logo/postgresql.png" class="w-[24px] h-[24px]" />
+          </div>
+          <div class="absolute bottom-[15%] left-[5%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
+            <img src="logo/docker.jpg" class="w-[24px] h-[24px]" />
+          </div>
+          <div class="absolute bottom-[15%] right-[5%] w-[50px] h-[50px] rounded-full bg-gray-800 flex items-center justify-center">
+            <img src="logo/react.png" class="w-[28px] h-[28px]" />
+          </div>
+        </div>
+
+        
+        <!-- About Text -->
+        <div>
+          <div class="flex flex-col">
+            <p class="text-gray-400 text-sm uppercase tracking-wide mb-1">About Me</p>
+            <div class="w-10 h-[2px] bg-gray-600"></div>
+          </div>
+
+          <h1 class="mt-4 text-4xl md:text-5xl font-bold leading-tight">
+            I'm <span class="text-blue-500">Full Stack Developer</span>
+          </h1>
+          <p class="text-gray-400 text-base sm:text-lg mt-4">
+            Full-Stack Web Developer with experience in designing and developing end-to-end web applications. 
+            Proficient in both frontend and backend technologies, with hands-on expertise in cloud-based deployments and database management.
+          </p>
+
+          <!-- Skills -->
+          <div class="grid grid-cols-2 gap-4 mt-6 text-blue-400">
+            <p class="flex items-center">✔ Website Development</p>
+            <p class="flex items-center">✔ AI Integration</p>
+            <p class="flex items-center">✔ Database Management</p>
+            <p class="flex items-center">✔ Cloud Solutions Architect</p>
+          </div>
+
+
+          <section id="education" class="text-white py-6 px-1">
+                <h2 class="text-2xl font-bold mb-5">Education</h2>
+                <div class="relative">
+                    <div class="space-y-8">
+                    <!-- vertical line -->
+                    <div class="absolute left-[15px] top-0 h-full w-[2px] bg-gradient-to-b from-blue-600 to-cyan-400"></div>
+
+                    <!-- Item 1 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-[6px] top-2 w-5 h-5 rounded-full bg-blue-500 shadow-[0_0_10px_2px_rgba(59,130,246,0.8)]"></div>
+                        <div class="mb-4">
+                        <div class="inline-block border bg-gradient-to-br from-zinc-800 to-gray-900 border-gray-700 text-gray-300 px-4 py-1 text-sm rounded-full">
+                            2022 - Present
+                        </div>
+                        </div>
+                        <h3 class="text-lg font-semibold">King Mongkut's Institute of Technology Ladkrabang</h3>
+                        <p class="text-sm text-gray-300">
+                        School of Information Technology, Software Engineering
+                        </p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-[6px] top-2 w-5 h-5 rounded-full bg-blue-500 shadow-[0_0_10px_2px_rgba(59,130,246,0.8)]"></div>
+                        <div class="mb-4">
+                        <div class="inline-block border bg-gradient-to-br from-zinc-800 to-gray-900 border-gray-700 text-gray-300 px-4 py-1 text-sm rounded-full">
+                            2018 - 2021
+                        </div>
+                        </div>
+                        <h3 class="text-lg font-semibold">Rattanakosin Somphot Bang Khun Thian School</h3>
+                        <p class="text-sm text-gray-300">
+                        Sciences and Mathematics Program
+                        </p>
+                    </div>
+
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="text-white mt-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col">
+            <p class="text-blue-500 text-sm uppercase tracking-wider font-semibold mb-1">My Skills</p>
+            <div class="w-10 h-[2px] bg-gray-600 mb-4"></div>
+            </div>
+
+            <div class="text-left mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold">Essential Tools I Use</h2>
+            <p class="text-gray-400 mt-2">
+                Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
+            </p>
+            </div>
+
+            <div id="skillsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="text-white mt-24 px-4">
+    <!-- Section Header -->
+    <div class="max-w-6xl mx-auto mb-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div>
+            <p class="text-blue-500 text-sm uppercase tracking-wider font-semibold mb-2">My Showcase</p>
+            <div class="w-10 h-[2px] bg-gray-600 mb-4"></div>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">Take a look at the latest projects I've done</h2>
+            <p class="text-gray-300 text-sm tracking-wider font-semibold mb-2 mt-4">Featured Projects</p>
+        </div>
+        <a
+            href="https://github.com/amesupakorn"
+            class="mt-4 md:mt-0 text-blue-500 inline-flex items-center group hover:text-blue-400 transition-colors"
+        >
+            Browse all projects
+            <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+        </div>
+    </div>
+
+    <!-- Project Grid -->
+    <div id="workGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"></div>
+    </section>
+
+     <footer id="contact" class="bg-neutral-900 text-neutral-200 mt-24">
+        <!-- top -->
+        <div class="max-w-6xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
+            <!-- Brand / Short bio -->
+            <div>
+            <h3 class="text-xl font-bold tracking-wide">SUPAKORN</h3>
+            <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
+                Full-stack developer who loves clean monochrome design. Let’s build fast,
+                reliable, and elegant web experiences together.
+            </p>
+
+            <!-- Socials -->
+            <div class="mt-5 flex items-center gap-3">
+                <!-- GitHub -->
+                <a href="https://github.com/amesupakorn" target="_blank" aria-label="GitHub"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-700 hover:border-neutral-500 hover:bg-neutral-800 transition">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12c0 4.43 2.87 8.19 6.84 9.5.5.09.68-.22.68-.49
+                    0-.24-.01-.87-.01-1.7-2.78.61-3.37-1.34-3.37-1.34-.46-1.16-1.12-1.46-1.12-1.46
+                    -.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34
+                    -2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65
+                    0 0 .84-.27 2.75 1.03.81-.22 1.66-.33 2.51-.34.85 0 1.7.11 2.51.34
+                    1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68
+                    0 3.83-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86 0 1.34-.01 2.42-.01 2.75
+                    0 .27.18.58.69.48C19.14 20.16 22 16.42 22 12 22 6.48 17.52 2 12 2z"/>
+                </svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/ame.supakorn/" target="_blank" aria-label="Facebook"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-700 hover:border-neutral-500 hover:bg-neutral-800 transition">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                    <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.19 8.44 9.94v-7.03H8.08v-2.91h2.36V9.41c0-2.33 1.39-3.62 3.52-3.62 1.02 0 2.09.18 2.09.18v2.3h-1.18c-1.17 0-1.54.73-1.54 1.48v1.78h2.63l-.42 2.91h-2.21V22c4.78-.75 8.44-4.92 8.44-9.94z"/>
+                </svg>
+                </a>
+
+                <!-- Mail -->
+                <a href="mailto:supakorn642@gmail.com" aria-label="Email"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-700 hover:border-neutral-500 hover:bg-neutral-800 transition">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                    <path d="M2 7.75A2.75 2.75 0 0 1 4.75 5h14.5A2.75 2.75 0 0 1 22 7.75v8.5A2.75 2.75 0 0 1 19.25 19H4.75A2.75 2.75 0 0 1 2 16.25v-8.5Zm2.8-.75 6.63 4.97c.34.26.79.26 1.13 0L19.2 7H4.8Z"/>
+                </svg>
+                </a>
+            </div>
+            </div>
+
+            <!-- Quick links -->
+            <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-neutral-400">Navigation</h4>
+            <ul class="mt-4 space-y-2 text-sm">
+                <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                <li><a href="#about" class="hover:text-white transition">About</a></li>
+                <li><a href="#skill" class="hover:text-white transition">My Skills</a></li>
+                <li><a href="#work" class="hover:text-white transition">What I Do</a></li>
+                <li><a href="index.html" class="hover:text-white transition">Back to Home</a></li>
+            </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+            <h4 class="text-sm font-semibold uppercase tracking-wider text-neutral-400">Contact</h4>
+            <ul class="mt-4 space-y-2 text-sm">
+                <li class="text-neutral-300">Bangkok, Thailand</li>
+                <li><a href="mailto:supakorn642@gmail.com" class="hover:text-white transition">supakorn642@gmail.com</a></li>
+                <li><a href="https://github.com/amesupakorn" target="_blank" class="hover:text-white transition">github.com/amesupakorn</a></li>
+            </ul>
+            <!-- CTA -->
+            <a href="mailto:supakorn642@gmail.com"
+                class="mt-5 inline-flex items-center gap-2 rounded-lg border border-neutral-700 px-4 py-2 text-sm hover:bg-neutral-800 transition">
+                <span>Let’s work together</span>
+                <span aria-hidden="true">→</span>
+            </a>
+            </div>
+        </div>
+
+        <!-- bottom bar -->
+        <div class="border-t border-neutral-800">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500">
+            <p>Copyright © <span id="year"></span> · Designed by <span class="text-neutral-300 font-semibold">SUPAKORN</span></p>
+            <a href="#home" class="mt-2 sm:mt-0 inline-flex items-center gap-2 hover:text-neutral-300 transition">
+                Back to top
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 4a.75.75 0 0 1 .53.22l5.25 5.25a.75.75 0 1 1-1.06 1.06L10 6.06 5.28 10.53a.75.75 0 1 1-1.06-1.06l5.25-5.25A.75.75 0 0 1 10 4z"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+    </footer>
+  </main>
+
+  <script src="script/tools.js"></script>
+  <script src="script/showcase_sthongae.js"></script>
+  <script src="script/skill_sthongae.js"></script>
+  <script src="script/work_sthongae.js"></script>
+  <script src="script/main.js"></script>
+</body>
+</html>
