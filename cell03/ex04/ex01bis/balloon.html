@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explode this balloon (jQuery)</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f3f3f3;
+      margin: 0;
+    }
+    #balloon {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+  </style>
+</head>
+<body>
+  <div id="balloon"></div>
+
+  <!-- โหลด jQuery ก่อน -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function () {
+      const $balloon = $('#balloon');
+      let size = 200;
+      const colors = ['red', 'green', 'blue'];
+      let colorIndex = 0;
+
+      // เมื่อคลิกบอลลูน
+      $balloon.on('click', function () {
+        size += 10;
+        colorIndex = (colorIndex + 1) % colors.length;
+
+        if (size > 420) {      // ระเบิด → รีเซ็ต
+          size = 200;
+          colorIndex = 0;
+        }
+
+        $balloon.css({
+          width: size + 'px',
+          height: size + 'px',
+          backgroundColor: colors[colorIndex]
+        });
+      });
+
+      // เมื่อ mouse ออกจากบอลลูน
+      $balloon.on('mouseleave', function () {
+        size = Math.max(200, size - 5);
+        colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+
+        $balloon.css({
+          width: size + 'px',
+          height: size + 'px',
+          backgroundColor: colors[colorIndex]
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>It’s over 9000 (jQuery)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .calculator {
+      background: #fff;
+      padding: 20px 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    input, select, button {
+      margin: 5px;
+      padding: 8px;
+      font-size: 1rem;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="left" placeholder="Left number">
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input type="text" id="right" placeholder="Right number">
+    <button id="try">Try me!</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(function () {
+      const isPositiveInteger = (val) => /^\d+$/.test(val);
+
+      $('#try').on('click', function () {
+        const left = $('#left').val().trim();
+        const right = $('#right').val().trim();
+        const op = $('#operator').val();
+
+        if (!isPositiveInteger(left) || !isPositiveInteger(right)) {
+          alert("Error :(");
+          return;
+        }
+
+        const a = parseInt(left, 10);
+        const b = parseInt(right, 10);
+
+        if ((op === '/' || op === '%') && b === 0) {
+          alert("It's over 9000!");
+          console.log("It's over 9000!");
+          return;
+        }
+
+        let result;
+        switch (op) {
+          case '+': result = a + b; break;
+          case '-': result = a - b; break;
+          case '*': result = a * b; break;
+          case '/': result = Math.floor(a / b); break;
+          case '%': result = a % b; break;
+        }
+
+        alert(result);
+        console.log(result);
+      });
+
+      // Alert ทุก ๆ 30 วินาที
+      setInterval(() => {
+        alert("Please, use me...");
+      }, 30000);
+    });
+  </script>
+</body>
+</html>
